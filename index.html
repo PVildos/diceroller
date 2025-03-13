@@ -10,7 +10,76 @@
         <script src="script.js"></script>
     </head>
     <body>
-       <!-- TODO -> 2 Cols, Legend left, calc right -->
+        <section id="application"> <!-- horizontal flex-->
+            <section id="information"> <!-- vertical flex-->
+                <section id="legend"> 
+                    <ul id="legendList">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </section>
+                <section id="logs"> <!-- horizontal flex-->
+                    <button type="button" id="commandLog"></button> <!-- vertical flex-->
+                    <button type="button" id="resultLog"></button> <!-- vertical flex-->
+                </section>
+            </section>
+            <section id="diceRoller">
+                <form id="diceRollerInput"> <!-- vertical flex-->
+                    <input type="text" id="inputField" name="inputField">
+                    <section id="buttons"> <!-- horizontal flex-->
+                        <form id="operatorInput"> <!-- horizontal flex-->
+                            <section id="numericOperators"> <!-- vertical flex-->
+                                <button type="button" id="buttonplus">+</button>
+                                <button type="button" id="buttonminus">-</button>
+                                <button type="button" id="buttonmult">*</button>
+                                <button type="button" id="buttondiv">/</button>
+                            </section>
+                            <section id="diceOperatorsRow1">
+                                <button type="button" id="buttonexplode">!</button>
+                                <button type="button" id="buttonspark">!!</button>
+                                <button type="button" id="buttonRollOver">&gt</button>
+                                <button type="button" id="buttonRollUnder">&lt</button>
+                            </section>
+                            <section id="diceOperatorsRow1">
+                                <button type="button" id="buttoneReroll">r</button>
+                                <button type="button" id="buttonRerollAll">R</button>
+                                <button type="button" id="buttonDropLow">dl</button>
+                                <button type="button" id="buttonDropHigh">dh</button>
+                            </section>
+                        </section>
+                    <form id="diceInput"> <!-- vertical flex-->
+                       
+                        <section id="numberRow1"> <!-- horizontal flex-->
+                            <button type="button" id="button9">9</button>
+                            <button type="button" id="button8">8</button>
+                            <button type="button" id="button7">7</button>
+                        </section>
+                        <section id="numberRow2">
+                            <button type="button" id="button6">6</button>
+                            <button type="button" id="button5">5</button>
+                            <button type="button" id="button4">4</button>
+                        </section>
+                        <section id="numberRow3">
+                            <button type="button" id="button3">3</button>
+                            <button type="button" id="button2">2</button>
+                            <button type="button" id="button1">1</button>
+                        </section>
+                        <section id="numberRow4">
+                            <button type="button" id="button0">0</button>
+                            <button type="button" id="buttonDot">.</button>
+                            <button type="button" id="buttonEq">=</button>
+                        </section>
+                        
+                        
+                        
+                    </form>
+                </form>
+            </section>
+        </section> 
         
         <script src="" async defer></script>
     </body>

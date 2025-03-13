@@ -8,28 +8,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body>
         <section id="application"> <!-- horizontal flex-->
             <section id="information"> <!-- vertical flex-->
                 <section id="legend"> 
+                    <h1>Legend</h1>
                     <ul id="legendList">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>!:</li>
+                        <li>!!:</li>
+                        <li>&gt:</li>
+                        <li>&lt:</li>
+                        <li>r:</li>
+                        <li>R:</li>
+                        <li>dl:</li>
+                        <li>dh:</li>
                     </ul>
                 </section>
                 <section id="logs"> <!-- horizontal flex-->
-                    <button type="button" id="commandLog"></button> <!-- vertical flex-->
-                    <button type="button" id="resultLog"></button> <!-- vertical flex-->
+                    <button type="button" class="logButtons" id="commandLog">Command Log</button> <!-- vertical flex-->
+                    <button type="button" class="logButtons" id="resultLog">Result Log</button> <!-- vertical flex-->
                 </section>
             </section>
-            <section id="diceRoller">
+            <section id="diceRoller" class="calcBody">
                 <form id="diceRollerInput"> <!-- vertical flex-->
-                    <input type="text" id="inputField" name="inputField">
+                    <section class="textInput"> 
+                        <input type="number" id="inputField" name="inputField" value="0" placeholder="0">
+                        <span class="blinkMe">_</span>
+                        <!-- <label for="inputField" style="flex-shrink: 1;"></label> -->
+                    </section>
+                    
                     <section id="buttons"> <!-- horizontal flex-->
                         <form id="operatorInput"> <!-- horizontal flex-->
                             <section id="numericOperators"> <!-- vertical flex-->
@@ -70,7 +79,7 @@
                         </section>
                         <section id="numberRow4">
                             <button type="button" id="button0">0</button>
-                            <button type="button" id="buttonDot">.</button>
+                            <button type="button" id="buttonDie">d</button>
                             <button type="button" id="buttonEq">=</button>
                         </section>
                         
